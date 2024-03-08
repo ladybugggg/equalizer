@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main{
+    background-image: url(./assets/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main aside:nth-child(1){
+    width: 80%;
+    padding: 5vw 8vw;
+    
+
+}
+
+main aside:nth-child(2){
+    width: 20%;
+}
+
+main aside:nth-child(1) img{
+    width: 10vw;
+}
+
+main aside:nth-child(1) figure{
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main aside:nth-child(1) figure h1{
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 88px;
+    color: rgb(25, 24, 38);
+}
+
+main aside:nth-child(1) figure p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    color: rgb(25, 24, 38);
+}
+
+
+
+
+
+
+
+
+
+
+section{
+    background: rgb(25, 24, 25);
+    height: 80vh;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem;
+    position: relative;
+    justify-content: center;
+}
+
+section .mobile{
+    width: 22vw;
+    height: 110%;
+    transform: translateY(-6rem) !important;
+}
+section .illustrate{
+    width: 25%;
+    /* height: 120%; */
+}
+
+.card{
+    background-color: rgb(250, 115, 82);
+    width: 35%;
+    border-radius: 20px;
+    padding: 2rem;
+    height: fit-content;
+    transform: translateY(4rem);
+}
+
+.card-head{
+    width: 100% !important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.card-head h1{
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.card-head p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.card-head div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-head div h1{
+    font-size: 65px;
+    font-weight: 700;
+    
+}
+.card-head div p{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.card-body{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px;
+
+}
+.card-body button{
+    width: 100%;
+    border: none;  
+    padding: 0.8rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+
+
+}
+
+.card-body button:nth-child(1){
+    background: black;
+    color: white;
+}
+
+.card-body button:nth-child(2){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #EDFFFE;
+}
+
+footer div:nth-child(1){
+width: 30%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+footer div:nth-child(2){
+width: 40%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+footer div:nth-child(3){
+width: 30%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
+footer div p a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1000px) {
+main aside:nth-child(1) figure h1{
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+section{
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+    gap: 20px;
+}
+
+section div:nth-child(2){
+    display: none;
+}
+
+section .mobile, .card{
+    transform: none;
+    width: 50vw;
+}
+}
+
+
+@media (max-width:700px) {
+    section{
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 0;
+        width: 100%;
+        margin: 2rem 0;
+
+    }
+
+    section .mobile, .card{
+        transform: none;
+        width: 80%;
+        
+
+    }
+
+    main{
+        height: fit-content;
+
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    footer div:nth-child(1) img{
+        width: 30vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+    main aside:nth-child(1){
+        width: 100%;
+        padding: 5vw 8vw;
+        font-size: 40px;
+
+    }
+
+    main aside:nth-child(1) h1{
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+
+    }
+
+    main aside:nth-child(1) p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    main aside:nth-child(1) img{
+        width: 30vw;
+    }
+    
+
+    main aside:nth-child(2){
+        width: 20%;
+        display: none;
+
+    }
+
+    
+}
+
+
+
+
+
+
+
